@@ -68,6 +68,10 @@ header {
   }
 }
 
+main {
+  padding: 4em 0;
+}
+
 /* navigation */
 
 nav ul {
@@ -87,6 +91,7 @@ nav a {
   font-weight: 700;
   text-transform: uppercase;
   padding: 0.25rem 0;
+  letter-spacing: 0.15em;
 }
 
 nav a:hover,
@@ -109,5 +114,136 @@ nav a:focus {
 
   nav li {
     margin: 1em;
+  }
+}
+
+/* ==============
+  Main
+============== */
+
+img {
+  max-width: 100%;
+}
+
+.home-content-bottom-item {
+  margin: 3em 0;
+}
+
+.continue-anchor {
+  font-family: var(--ff-ubu);
+  text-decoration: none;
+  color: #1792d2;
+  text-transform: uppercase;
+  letter-spacing: 0.175rem;
+  font-size: 0.875rem;
+}
+
+.img-description {
+  text-align: left;
+  color: var(--clr-nav-a);
+  font-weight: 700;
+}
+
+.post-data {
+  color: #707070;
+  margin: 1em 0;
+  font-size: 0.8rem;
+}
+
+.post-title {
+  font-size: 1.5rem;
+}
+
+hr {
+  margin: 2em 0;
+}
+
+.side-title {
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  letter-spacing: 3.6px;
+  font: normal normal bold 18px/28px Ubuntu;
+  color: var(--clr-title);
+  margin: 1em 0;
+}
+
+.side-subtitle {
+  font-size: 1.125rem;
+  padding: 0.3em 0;
+}
+
+.side-p {
+  color: var(--clr-title);
+}
+
+.home-side-top-item {
+  padding: 1em;
+  border: 1rem solid #ebebeb;
+}
+
+.home-side-bottom-container {
+  padding: 1em;
+  border: 1rem solid #ebebeb;
+}
+
+.home-side-bottom-container hr {
+  margin: 1em 0;
+}
+
+.home-side {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.home-side-bottom-item img {
+  height: 100px;
+  /* max-width: 300px; */
+  width: 100%;
+  object-fit: cover;
+}
+
+/* ==============
+  Footer
+============== */
+
+footer {
+  background-color: #143774;
+  padding: 3em;
+  margin: 0 auto;
+  text-align: center;
+  color: #ffffff;
+}
+
+footer h1 {
+  color: #ffffff;
+  font: normal normal bold 18px/28px Ubuntu;
+  opacity: 0.5;
+  font-weight: 100;
+}
+
+footer p {
+  text-align: center;
+  opacity: 0.5;
+  font-weight: 100;
+}
+
+/* Media Query */
+
+@media (min-width: 800px) {
+  main {
+    display: flex;
+    gap: 2em;
+  }
+
+  .home-content-bottom-item {
+    display: flex;
+    gap: 2em;
+  }
+
+  .home-content-bottom-item-pic img {
+    height: 200px;
+    max-width: 200px;
+    object-fit: cover;
   }
 }
