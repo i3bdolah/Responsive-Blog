@@ -125,6 +125,13 @@ img {
   max-width: 100%;
 }
 
+.home-content-top img {
+  object-fit: cover;
+  object-position: 100% 100%;
+  width: 100%;
+  max-height: 300px;
+}
+
 .home-content-bottom-item {
   margin: 3em 0;
 }
@@ -156,6 +163,7 @@ img {
 
 hr {
   margin: 2em 0;
+  opacity: 0.2;
 }
 
 .side-title {
